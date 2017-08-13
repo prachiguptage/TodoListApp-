@@ -10,11 +10,28 @@
         android:id="@+id/btnAddItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Item"
+        android:text="@string/add_item"
         android:onClick="onAddItem"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/text_color"
+        android:layout_margin="@dimen/margin"/>
+    <EditText
+        android:id="@+id/etNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnAddItem"
+        android:hint="@string/new_item"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/btnAddItem"
+        android:layout_toStartOf="@id/btnAddItem"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/text_color"
+        android:maxLength="@integer/title_max_length"
+        android:textSize="@dimen/text_size_main"/>
 
     <ListView
         android:id="@+id/lvItems"
@@ -23,17 +40,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@id/btnAddItem"/>
+        android:layout_above="@id/etNewItem"
+        android:layout_margin="@dimen/margin"/>
 
-    <EditText
-        android:id="@+id/etNewItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/btnAddItem"
-        android:hint="Enter a new item"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@id/btnAddItem"
-        android:layout_toStartOf="@id/btnAddItem"
-        android:layout_alignParentBottom="true"/>
+
 </RelativeLayout>

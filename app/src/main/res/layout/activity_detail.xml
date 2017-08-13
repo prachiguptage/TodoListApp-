@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codepath.simpletodo.DetailActivity">
+
+    <TextView
+        android:id="@+id/tvDetailTitleHeading"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:text="@string/title"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvDetailTitleHeading"
+        android:layout_toRightOf="@id/tvDetailTitleHeading"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:hint="@string/title"
+        android:maxLength="@integer/title_max_length"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/tvDetailDueDateHeading"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDetailTitleHeading"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:text="@string/dueDate"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+
+    <TextView
+        android:id="@+id/tvDetailDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDetailTitle"
+        android:layout_toEndOf="@id/tvDetailDueDateHeading"
+        android:layout_toRightOf="@id/tvDetailDueDateHeading"
+        android:hint="@string/dueDate_hint"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+
+    <TextView
+        android:id="@+id/tvDetailPriorityHeading"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDetailDate"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:text="@string/priority"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/tvDetailPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDetailDate"
+        android:layout_toEndOf="@id/tvDetailDueDateHeading"
+        android:layout_toRightOf="@id/tvDetailDueDateHeading"
+        android:hint="@string/dueDate_hint"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/tvDetailStatusHeading"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDetailPriorityHeading"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:text="@string/status"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/tvDetailStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDetailPriorityHeading"
+        android:layout_toEndOf="@id/tvDetailStatusHeading"
+        android:layout_toRightOf="@id/tvDetailStatusHeading"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:text="@string/status"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+
+    <TextView
+        android:id="@+id/tvDetailItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDetailStatus"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:text="@string/item"
+        android:gravity="center_horizontal"
+        android:textColor="@color/low_priority"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin" />
+
+    <ListView
+        android:id="@+id/lvDetailCheckList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvDetailItem"/>
+
+</RelativeLayout>

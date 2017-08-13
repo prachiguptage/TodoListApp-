@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codepath.simpletodo.EditActivity">
+
+    <TextView
+        android:id="@+id/tvEditTitleHeading"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:text="@string/title"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+    <EditText
+        android:id="@+id/etEditTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvEditTitleHeading"
+        android:layout_toRightOf="@id/tvEditTitleHeading"
+        android:hint="@string/title"
+        android:maxLength="@integer/title_max_length"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/tvEditDueDateHeading"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEditTitle"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:text="@string/dueDate"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+    <ImageButton
+        android:id="@+id/imEditCalendar"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/etEditTitle"
+        android:background="@android:drawable/ic_menu_my_calendar"
+        android:contentDescription="@string/date_picker"
+        android:onClick="editOpenDatePicker"/>
+
+    <TextView
+        android:id="@+id/tvEditDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEditTitle"
+        android:layout_toEndOf="@id/tvEditDueDateHeading"
+        android:layout_toLeftOf="@id/imEditCalendar"
+        android:layout_toRightOf="@id/tvEditDueDateHeading"
+        android:layout_toStartOf="@id/imEditCalendar"
+        android:hint="@string/dueDate_hint"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+
+    <TextView
+        android:id="@+id/tvEditPriorityHeading"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEditDate"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:text="@string/priority"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+    <Spinner
+        android:id="@+id/spEditPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEditDate"
+        android:layout_toEndOf="@id/tvEditPriorityHeading"
+        android:layout_toRightOf="@id/tvEditPriorityHeading" />
+
+    <TextView
+        android:id="@+id/tvEditStatusHeading"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spEditPriority"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:text="@string/status"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin"/>
+
+    <RadioGroup
+        android:id="@+id/rgEditStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spEditPriority"
+        android:layout_toEndOf="@id/tvEditStatusHeading"
+        android:layout_toRightOf="@id/tvEditStatusHeading"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/tv_marginTop"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/rbEditTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size"
+            android:text="@string/todo"/>
+        <RadioButton
+            android:id="@+id/rbEditDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size"
+            android:text="@string/done" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnEditAddCheckItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgEditStatus"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size"
+        android:text="@string/addCheckList"
+        android:onClick="onEditCheckItem"
+        android:drawableStart="@android:drawable/ic_menu_add"
+        android:drawableLeft="@android:drawable/ic_menu_add"
+        android:layout_margin="@dimen/margin"
+        android:background="@drawable/rounded_button"/>
+    <ListView
+        android:id="@+id/lvEditCheckList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnEditAddCheckItem"/>
+
+</RelativeLayout>

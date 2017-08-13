@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">SimpleTodo</string>
+    <string name="app_name">Todo</string>
+    <string name="title">Title</string>
+    <string name="dueDate">Due Date</string>
+    <string name="date_picker">Date Picker</string>
+    <string name="dueDate_hint">Enter Due Date</string>
+    <string name="priority">Priority</string>
+    <string name="status">Status</string>
+    <string name="todo">Todo</string>
+    <string name="done">Done</string>
+    <string name="addCheckList">Add Check List Item</string>
+    <string name="addCheck">Add Check List Item</string>
+    <string name="next">Next</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="item_save">Save</string>
+    <string name="item_close">Close</string>
+    <string name="new_item">Enter a new item</string>
+    <string name="add_item">Add Item</string>
+    <string name="delete">Delete</string>
+    <string name="item">Check List</string>
+    <string name="item_edit">Edit</string>
+    <string name="item_delete">Delete</string>
+    <string name="item_add">Add</string>
 </resources>

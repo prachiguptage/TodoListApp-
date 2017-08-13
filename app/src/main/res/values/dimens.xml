@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_view">18sp</dimen>
+    <dimen name="text_size">22sp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="tv_width">110dp</dimen>
+    <dimen name="tv_marginTop">10dp</dimen>
+    <dimen name="image_width">40dp</dimen>
+    <dimen name="image_height">40dp</dimen>
+    <dimen name="button_radius">20dp</dimen>
+    <dimen name="padding">5dip</dimen>
+    <dimen name="margin_checkList">5dp</dimen>
+    <dimen name="text_size_main">20sp</dimen>
+</resources>

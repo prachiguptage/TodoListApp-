@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#827717</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#FFA000</color>
+
+    <color name="low_priority">#009688</color>
+    <color name="medium_priority">#FDD835</color>
+    <color name="high_priority">#E53935</color>
+
+    <color name="status_todo">#FF9800</color>
+    <color name="status_done">#43A047</color>
+    <color name="text_color">#000000</color>
+
+    <color name="button_background">#00ACC1</color>
+    <color name="button_stroke">#FFFFFF</color>
 </resources>
